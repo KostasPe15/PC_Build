@@ -1,0 +1,201 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Build your own pc</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="pc_build.css">
+    </head>
+    <style>
+        body{
+        background-color: darkslategray;
+    }
+    </style>
+    <body>
+        <h1>Build your own pc</h1>
+
+        <div class="wrapper" style="background-color: white; margin-bottom: 20px;">
+          <table >
+            <tr>
+              <th>PC case</th>
+              <th>CPU</th> 
+              <th>Motherboard</th>
+              <th>RAM</th>
+              <th>Storage</th>
+              <th>PSU</th>
+            </tr>
+            <tr>
+              <td>NZXT H510i Black</td>
+              <td>AMD Ryzen 5 3600 Box</td>
+              <td>MSI B450-A Pro Max</td>
+              <td>G.Skill RipjawsV DDR4-3200MHz</td>
+              <td>Western Digital Blue 1TB</td>
+              <td>Corsair CV Series CV550</td>
+            </tr>
+            <tr>
+              <td>Be Quiet Pure Base 500DX</td>
+              <td>AMD Ryzen 7 3700X Box</td>
+              <td>MSI Z490 A Pro</td>
+              <td>Corsair Vengeance RGB Pro DDR4-3600MHz</td>
+              <td>Samsung 970 Evo Plus SSD 1.0TB</td>
+              <td>Thermaltake Smart RGB</td>
+            </tr>
+            <tr>
+              <td>CoolerMaster MasterBox MB311L</td>
+              <td>Intel Core i5-10400F Box</td>
+              
+            </tr>
+            <tr>
+              <td>NZXT H210i</td>
+              <td>Intel Core i7-10700K Box</td>
+              
+            </tr>
+          </table>
+        </div>
+            
+        <div class="wrapper" style="background-color: white; margin-bottom: 20px;">
+          <ul>
+            <li>With OS</li>
+            <li>Prebuilt</li>
+            <li>Express Shipping</li>
+          </ul>  
+          
+        </div>
+
+        <div class="wrapper">
+            <div class="choice">
+                <h2>PC case</h2>
+                <select name="cases" multiple size="6" id="caseList">
+                    <optgroup label="Midi tower">
+                      <option id="nzxtmidi"; value="nzxtmidi.png">NZXT H510i Black</option>
+                      <option id="bequiet"; value="bequiet.png">Be Quiet Pure Base 500DX</option>
+                    </optgroup>
+                    <optgroup label="Mini tower">
+                      <option id="coolermaster"; value="coolermaster.png">CoolerMaster MasterBox MB311L</option>
+                      <option id="nzxtmini"; value="nzxtmini.png">NZXT H210i</option>
+                    </optgroup>
+                  </select>
+            </div>
+
+            
+            <div class="whiteback">
+              <img id="caseimage" src="case.png">
+            </div>
+        </div>
+
+        <div class="wrapper">
+            <div class="choice">
+              <h2>CPU</h2>
+              <select name="cpu" multiple size="6" id="cpuList">
+                  <optgroup label="AMD">
+                    <option id="ryzen5"; value="ryzen5.png">AMD Ryzen 5 3600 Box</option>
+                    <option id="ryzen7"; value="ryzen7.png">AMD Ryzen 7 3700X Box</option>
+                  </optgroup>
+                  <optgroup label="Intel">
+                    <option id="intel5"; value="intel5.png">Intel Core i5-10400F Box</option>
+                    <option id="intel7"; value="intel7.png">Intel Core i7-10700K Box</option>
+                  </optgroup>
+                </select>
+            </div>
+          
+            <div class="whiteback">
+              <img id="cpuimage" src="cpu.png">
+            </div>
+        </div>
+            
+        <div class="wrapper">
+            <div class="choice">
+              <h2>Motherboard</h2>
+              <select name="mother" multiple size="6" id="motherList">
+                <optgroup label="AM4 Socket">
+                  <option id="b450"; value="b450.png">MSI B450-A Pro Max</option>
+                </optgroup>
+                <optgroup label="1200 Socket">
+                  <option id="z490"; value="z490.png">MSI Z490 A Pro</option>
+                </optgroup>
+              </select>
+            </div>
+          
+            <div class="whiteback">
+              <img id="motherimage" src="mother.png">
+            </div>
+        </div>
+
+        <div class="wrapper">
+            <div class="choice">
+              <h2>RAM</h2>
+              <select name="ram" multiple size="6" id="ramList">
+                <optgroup label="16gb">
+                  <option id="gskill"; value="gskill.png">G.Skill RipjawsV DDR4-3200MHz</option>
+                </optgroup>
+                <optgroup label="32gb">
+                  <option id="corsair"; value="corsair.png">Corsair Vengeance RGB Pro DDR4-3600MHz</option>
+                </optgroup>
+              </select>
+            </div>
+        
+            <div class="whiteback">
+              <img id="ramimage" src="ram.png">
+            </div>
+        </div>
+
+        <div class="wrapper">
+            <div class="choice">
+            <h2>Storage</h2>
+              <select name="storage" multiple size="6" id="storageList">
+                <optgroup label="HDD">
+                  <option id="hdd"; value="hdd.png">Western Digital Blue 1TB</option>
+                </optgroup>
+                <optgroup label="SSD">
+                  <option id="ssd"; value="ssd.png">Samsung 970 Evo Plus SSD 1.0TB</option>
+                </optgroup>
+              </select>
+            </div>
+
+            <div class="whiteback">
+              <img id="storageimage" src="storage.png">
+            </div>
+        </div>
+
+        <div class="wrapper">
+            <div class="choice">
+              <h2>PSU</h2>
+                <select name="psu" multiple size="6" id="psuList">
+                  <optgroup label="550W">
+                    <option id="corspsu"; value="corspsu.png">Corsair CV Series CV550</option>
+                  </optgroup>
+                  <optgroup label="700W">
+                    <option id="thermaltake"; value="thermaltake.png">Thermaltake Smart RGB</option>
+                    <option id="bqpsu"; value="bqpsu.png">Be Quiet System Power 9</option>
+                  </optgroup>
+                </select>
+              </div>
+      
+              <div class="whiteback">
+                <img id="psuimage" src="psu.png">
+              </div>
+        </div>
+
+        <div class="wrapper">
+              <div class="choice extra">
+                <h2>EXTRA</h2>
+                <form id="extra">
+                  <input type="checkbox" id="OS" name="OS" value="OS">
+                  <label> With OS</label><br>
+                  <input type="checkbox" id="Prebuilt" name="Prebuilt" value="Prebuilt">
+                  <label> Prebuilt</label><br>
+                  <input type="checkbox" id="Shipping" name="Shipping" value="Shipping">
+                  <label> Express Shipping</label><br><br>
+                </form>
+                  
+              </div>
+
+              <div class="calc">    
+                  <button id="calculate" class="calcbutton">Calculate cost</button>
+                  <p class="result"><span></span></p>
+              </div>
+        </div>
+
+      <script src="pc_build.js"></script>
+    </body>
+</html>

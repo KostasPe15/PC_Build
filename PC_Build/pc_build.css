@@ -1,0 +1,137 @@
+    h1{
+        color: black;
+        text-align: center;
+        font-size: 3rem;
+        border: black;
+        border-style: solid;
+        margin: auto;
+        margin-bottom: 20px;
+        background-color: darkcyan;
+    }
+
+    h2{
+        color: black;
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .wrapper{
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        justify-content: space-around;
+    }
+
+    .choice{
+        order: 1;
+        border: black;
+        border-style: solid;
+        background-image: linear-gradient(to bottom right, darkcyan, gray);
+        width: 40%;
+        margin-bottom: 20px;
+        height: 200px;
+    }
+
+    .whiteback {
+        order: 2;
+        border: black;
+        border-style: solid;
+        background-color: white;
+        width: 40%;
+        margin-bottom: 20px;
+        height: 200px;
+    }
+
+    .calc{
+        order: 2;
+        width: 40%;
+        margin-bottom: 20px;
+        height: 200px;
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        justify-content: space-around;
+        
+    }
+
+    .extra{
+        order: 1;
+        background-image: linear-gradient(to bottom right, darkcyan, gray);
+        width: 40%;
+        margin-bottom: 20px;
+        height: 200px;
+    }
+
+    select{
+        overflow: hidden;
+        margin: auto;
+        display: block;
+        background-color:darkslategray;
+        border: black;
+        border-style: solid;
+    }
+
+    img{
+        max-height: 200px;
+        margin: auto;
+        display: block;
+    }
+
+    .calcbutton{
+        order: 1;
+        border: black;
+        border-style: solid;
+        font-size: xx-large;
+        background-image: linear-gradient(to bottom right, darkcyan, gray);
+        font-weight: bold;
+        height: 3.5rem;
+        margin-right: 0rem;
+    }
+
+    .result{
+        order: 2;
+        background-color: white;
+        border: black;
+        border-style: solid;
+        width: 150px;
+        height: 40px;
+        font-size: xx-large;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 0px;
+        margin-left: 0rem;
+    }
+
+    form{
+        font-size: x-large;
+    }
+
+    @media (max-width: 600px) {
+        .wrapper{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .choice{
+            display: block;
+            width: auto;
+        }
+
+        .whiteback{
+            display: block;
+            width: auto;
+        }
+
+        .calc{
+            display: flex;
+            flex-direction: column;
+            justify-content:space-around;
+        }
+
+        .calcbutton{
+            height: auto;
+            width: auto;
+        }
+    }
+
